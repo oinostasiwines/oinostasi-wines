@@ -4,118 +4,240 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Μεσοπέλαγα - Οινοστάσι</title>
+<title>Μεσοπέλαγα | Οινοστάσι</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: auto;
-    padding: 25px;
-    color: #222;
-    line-height: 1.5;
+
+*{
+    box-sizing:border-box;
 }
 
-h1 {
-    text-align: center;
-    font-size: 28px;
+body{
+    margin:0;
+    padding:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#29251f;
+    background:#eee8dc;
 }
 
-h2 {
-    text-align: center;
-    font-weight: normal;
+.card{
+    max-width:600px;
+    margin:auto;
+    padding:25px;
+    border:1px solid #cbbd9f;
+    border-radius:20px;
+
+    background:
+    linear-gradient(rgba(255,252,244,.92),rgba(255,252,244,.92)),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-td {
-    border-bottom: 1px solid #ddd;
-    padding: 8px;
-}
-
-.logo {
+.logo{
     text-align:center;
-    font-size:18px;
-    margin-bottom:20px;
 }
-</style>
 
+.logo img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    border-radius:50%;
+}
+
+.brand{
+    text-align:center;
+    font-size:27px;
+    letter-spacing:2px;
+    margin-top:8px;
+    font-weight:600;
+}
+
+.place{
+    text-align:center;
+    font-size:16px;
+    margin-top:4px;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    margin-top:28px;
+}
+
+.bottle{
+    width:34%;
+    text-align:center;
+}
+
+.bottle img{
+    width:100%;
+    max-height:360px;
+    object-fit:contain;
+}
+
+.intro{
+    width:66%;
+}
+
+h1{
+    margin:0;
+    font-family:Georgia,serif;
+    font-size:38px;
+    color:#52633b;
+    font-weight:normal;
+}
+
+.type{
+    font-size:18px;
+    letter-spacing:1px;
+    color:#52633b;
+    margin-top:10px;
+}
+
+.pge{
+    margin-top:7px;
+    font-size:15px;
+}
+
+.description{
+    margin-top:22px;
+    line-height:1.6;
+    font-size:15px;
+}
+
+.section{
+    margin-top:30px;
+}
+
+.section-title{
+    color:#52633b;
+    font-size:17px;
+    letter-spacing:.5px;
+    font-weight:bold;
+    padding-bottom:7px;
+    border-bottom:1px solid #cfc5b3;
+}
+
+.info-row{
+    padding:11px 3px;
+    border-bottom:1px solid #e0d8ca;
+    font-size:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    background:rgba(255,255,255,.35);
+}
+
+td{
+    border:1px solid #d0c6b5;
+    padding:9px;
+    font-size:14px;
+}
+
+td:last-child{
+    text-align:right;
+}
+
+.ingredients{
+    line-height:1.7;
+}
+
+.website{
+    display:block;
+    margin-top:30px;
+    background:#586943;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.website span{
+    display:block;
+    font-size:13px;
+    font-weight:normal;
+    margin-top:4px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+    font-size:13px;
+    color:#756c5c;
+}
+
+@media(max-width:500px){
+
+    body{
+        padding:8px;
+    }
+
+    .card{
+        padding:18px;
+    }
+
+    .hero{
+        gap:12px;
+        align-items:center;
+    }
+
+    .bottle{
+        width:38%;
+    }
+
+    .intro{
+        width:62%;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .description{
+        font-size:14px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="logo">
-<strong>ΟΙΝΟΣΤΑΣΙ</strong><br>
-Νάξος - Κυκλάδες
-</div>
+<div class="card">
 
-<h1>Μεσοπέλαγα</h1>
+    <div class="logo">
+        <img src="logo.jpg" alt="Οινοστάσι">
+    </div>
 
-<h2>Λευκός Οίνος</h2>
-
-<p>
-Αλκοολικός τίτλος: <strong>12% vol</strong><br>
-Περιεχόμενο: <strong>750 ml</strong>
-</p>
-
-<h3>Διατροφικές πληροφορίες (ανά 100 ml)</h3>
-
-<table>
-<tr>
-<td>Ενέργεια</td>
-<td>293 kJ / 70 kcal</td>
-</tr>
-
-<tr>
-<td>Λιπαρά</td>
-<td>0 g</td>
-</tr>
-
-<tr>
-<td>Κορεσμένα λιπαρά</td>
-<td>0 g</td>
-</tr>
-
-<tr>
-<td>Υδατάνθρακες</td>
-<td>0,3 g</td>
-</tr>
-
-<tr>
-<td>Σάκχαρα</td>
-<td>0,3 g</td>
-</tr>
-
-<tr>
-<td>Πρωτεΐνες</td>
-<td>0 g</td>
-</tr>
-
-<tr>
-<td>Αλάτι</td>
-<td>0 g</td>
-</tr>
-
-</table>
+    <div class="brand">ΟΙΝΟΣΤΑΣΙ</div>
+    <div class="place">Νάξος | Κυκλάδες</div>
 
 
-<h3>Συστατικά</h3>
+    <div class="hero">
 
-<p>
-Σταφύλια, θειώδη.
-</p>
+        <div class="bottle">
+            <img src="mesopelaga.png" alt="Μεσοπέλαγα Οινοστάσι">
+        </div>
 
+        <div class="intro">
 
-<h3>Αλλεργιογόνα</h3>
+            <h1>Μεσοπέλαγα</h1>
 
-<p>
-Περιέχει θειώδη.
-</p>
+            <div class="type">
+                ΛΕΥΚΟΣ ΟΙΝΟΣ
+            </div>
 
+            <div class="pge">
+                Π.Γ.Ε. ΚΥΚΛΑΔΕΣ
+            </div>
 
-</body>
-</html>
+            <div
