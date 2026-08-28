@@ -4,105 +4,336 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Αυγή - Οινοστάσι</title>
+<title>Αυγή | Οινοστάσι</title>
 
 <style>
-body {
-font-family: Arial, sans-serif;
-max-width:600px;
-margin:auto;
-padding:25px;
-color:#222;
-line-height:1.5;
+* {
+  box-sizing: border-box;
 }
 
-h1,h2 {
-text-align:center;
+body {
+  margin: 0;
+  background: #f1e6e2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2f2b25;
+}
+
+.page {
+  max-width: 620px;
+  margin: 18px auto;
+  background: #fff8f5;
+  border: 1px solid #d8b7b0;
+  border-radius: 22px;
+  padding: 22px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.brand {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+.location {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.bottle {
+  width: 36%;
+  text-align: center;
+}
+
+.bottle img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.hero-text {
+  width: 64%;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  color: #b64045;
+  font-size: 40px;
+  margin: 0 0 12px 0;
+}
+
+.wine-type {
+  color: #b64045;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.pge {
+  font-size: 17px;
+  margin-top: 8px;
+}
+
+.description {
+  margin-top: 22px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.section {
+  margin-top: 28px;
+}
+
+.section-title {
+  color: #b64045;
+  font-weight: bold;
+  font-size: 17px;
+  border-bottom: 1px solid #d8c7c3;
+  padding-bottom: 7px;
+  margin-bottom: 8px;
+}
+
+.row {
+  padding: 11px 4px;
+  border-bottom: 1px solid #eadfdb;
 }
 
 table {
-width:100%;
-border-collapse:collapse;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
 td {
-border-bottom:1px solid #ddd;
-padding:8px;
+  border: 1px solid #d8c8c3;
+  padding: 10px;
+  font-size: 14px;
+}
+
+td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+.website {
+  display: block;
+  margin-top: 32px;
+  padding: 16px;
+  background: #c4474d;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.website small {
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  color: #7d6663;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+  .page {
+    margin: 8px;
+    padding: 18px;
+  }
+
+  .hero {
+    gap: 12px;
+  }
+
+  .bottle {
+    width: 38%;
+  }
+
+  .hero-text {
+    width: 62%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .wine-type {
+    font-size: 17px;
+  }
 }
 </style>
-
 </head>
 
 <body>
 
-<p style="text-align:center;">
-<strong>ΟΙΝΟΣΤΑΣΙ</strong><br>
-Νάξος - Κυκλάδες
-</p>
+<div class="page">
 
-<h1>Αυγή</h1>
-<h2>Ροζέ Οίνος</h2>
+  <div class="logo">
+    <img src="logo.png" alt="Οινοστάσι">
+  </div>
 
-<p>
-Αλκοολικός τίτλος: <strong>12% vol</strong><br>
-Περιεχόμενο: <strong>750 ml</strong>
-</p>
+  <div class="brand">ΟΙΝΟΣΤΑΣΙ</div>
+  <div class="location">Νάξος | Κυκλάδες</div>
 
-<h3>Διατροφικές πληροφορίες (ανά 100 ml)</h3>
+  <div class="hero">
 
-<table>
+    <div class="bottle">
+      <img src="avgi.png" alt="Αυγή">
+    </div>
 
-<tr>
-<td>Ενέργεια</td>
-<td>293 kJ / 70 kcal</td>
-</tr>
+    <div class="hero-text">
 
-<tr>
-<td>Λιπαρά</td>
-<td>0 g</td>
-</tr>
+      <h1>Αυγή</h1>
 
-<tr>
-<td>Κορεσμένα λιπαρά</td>
-<td>0 g</td>
-</tr>
+      <div class="wine-type">
+        ΡΟΖΕ ΟΙΝΟΣ
+      </div>
 
-<tr>
-<td>Υδατάνθρακες</td>
-<td>0,3 g</td>
-</tr>
+      <div class="pge">
+        Π.Γ.Ε. ΚΥΚΛΑΔΕΣ
+      </div>
 
-<tr>
-<td>Σάκχαρα</td>
-<td>0,3 g</td>
-</tr>
+      <div class="description">
+        Ροζέ οίνος από Φωκιανό, Σαββατιανό και Μονεμβασιά,
+        με φρουτώδη αρώματα, δροσερή οξύτητα και μακρά επίγευση.
+      </div>
 
-<tr>
-<td>Πρωτεΐνες</td>
-<td>0 g</td>
-</tr>
+    </div>
 
-<tr>
-<td>Αλάτι</td>
-<td>0 g</td>
-</tr>
+  </div>
 
-</table>
+  <div class="section">
 
+    <div class="section-title">
+      ΣΤΟΙΧΕΙΑ ΟΙΝΟΥ
+    </div>
 
-<h3>Συστατικά</h3>
+    <div class="row">
+      🍇 Ποικιλίες:
+      <strong>40% Φωκιανό, 40% Σαββατιανό, 20% Μονεμβασιά</strong>
+    </div>
 
-<p>
-Σταφύλια, θειώδη.
-</p>
+    <div class="row">
+      % Αλκοολικός τίτλος: <strong>12% vol</strong>
+    </div>
 
+    <div class="row">
+      🍾 Περιεχόμενο: <strong>750 ml</strong>
+    </div>
 
-<h3>Αλλεργιογόνα</h3>
+  </div>
 
-<p>
-Περιέχει θειώδη.
-</p>
+  <div class="section">
 
+    <div class="section-title">
+      ΔΙΑΤΡΟΦΙΚΕΣ ΠΛΗΡΟΦΟΡΙΕΣ
+      <small>(ανά 100 ml)</small>
+    </div>
+
+    <table>
+
+      <tr>
+        <td>Ενέργεια</td>
+        <td>293 kJ / 70 kcal</td>
+      </tr>
+
+      <tr>
+        <td>Λιπαρά</td>
+        <td>0 g</td>
+      </tr>
+
+      <tr>
+        <td>εκ των οποίων κορεσμένα</td>
+        <td>0 g</td>
+      </tr>
+
+      <tr>
+        <td>Υδατάνθρακες</td>
+        <td>0,03 g</td>
+      </tr>
+
+      <tr>
+        <td>εκ των οποίων σάκχαρα</td>
+        <td>0,03 g</td>
+      </tr>
+
+      <tr>
+        <td>Πρωτεΐνες</td>
+        <td>0 g</td>
+      </tr>
+
+      <tr>
+        <td>Αλάτι</td>
+        <td>0 g</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+  <div class="section">
+
+    <div class="section-title">
+      ΣΥΣΤΑΤΙΚΑ
+    </div>
+
+    <p>Σταφύλια, θειώδη.</p>
+
+  </div>
+
+  <div class="section">
+
+    <div class="section-title">
+      ΑΛΛΕΡΓΙΟΓΟΝΑ
+    </div>
+
+    <p><strong>Περιέχει θειώδη.</strong></p>
+
+  </div>
+
+  <a class="website"
+     href="https://www.oinostasi.com/"
+     target="_blank"
+     rel="noopener">
+
+    🌐 Επισκεφθείτε την ιστοσελίδα μας
+
+    <small>www.oinostasi.com</small>
+
+  </a>
+
+  <div class="footer">
+    ΟΙΝΟΣΤΑΣΙ • Νάξος • Κυκλάδες
+    <br>
+    Απολαύστε υπεύθυνα
+  </div>
+
+</div>
 
 </body>
 </html>
